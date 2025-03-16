@@ -17,25 +17,6 @@ The CV Application is a React-based web tool designed to help users create a pol
 - **CSS**: For custom styling and responsive layouts.
 - **Git/GitHub**: For version control and collaboration.
 
-## Project Structure
-CV-Application/
-├── src/
-│   ├── components/         # Reusable React components
-│   │   ├── PersonalInfo.jsx
-│   │   ├── Education.jsx
-│   │   ├── Experience.jsx
-│   │   └── ...             # Additional components
-│   ├── styles/            # CSS styling files
-│   │   ├── App.css
-│   │   └── ...            # Component-specific styles
-│   ├── App.jsx            # Main app component
-│   ├── main.jsx           # Vite entry point
-│   └── index.html         # Root HTML file
-├── .gitignore             # Files ignored by Git
-├── package.json           # Dependencies and scripts
-├── vite.config.js         # Vite configuration
-└── README.md              # Project documentation
-
 
 ## Setup Instructions
 
