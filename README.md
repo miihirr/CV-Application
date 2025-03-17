@@ -26,17 +26,28 @@ The CV Application is a React-based web tool designed to help users create a pol
 
 ### Installation
 1. **Clone the Repository**:
+```bash
+     git clone https://github.com/your-username/CV-Application.git
+```
 
-   git clone https://github.com/your-username/CV-Application.git
+2. **Open Repository**:
+```bash
+     cd CV-Application
+```
 
-   cd CV-Application
+3. **Open project in VS code**
+```bash
+    code .
+```
 
-2. **Install Dependencies**:
-
+4. **Install Dependencies**:
+```bash
     npm install
+```
 
-2. **Run the Development Server**:
-
+5. **Run the Development Server**:
+```bash 
     npm run dev
+```
 
 Access the app at http://localhost:5173 (or the assigned port).
