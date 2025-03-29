@@ -28,7 +28,7 @@ The CV Application is a React-based web tool designed to help users create a pol
 1. **Clone the Repository**:
 ```bash
      git clone https://github.com/your-username/CV-Application.git
-``
+```
 
 2. **Open Repository**:
 ```bash
