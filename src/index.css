@@ -1,10 +1,78 @@
 @import "tailwindcss";
 
-/*  
 @layer components{
-@apply taiwindCSS
+    .form1{
+        @apply min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 p-8 w-screen;
+    }
+    .input{
+        @apply w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-300 
+        focus:ring-2 focus:ring-blue-100 transition-all duration-200 outline-none
+        placeholder-gray-400 text-gray-700 hover:border-gray-300;
+    }
+    .label{
+        @apply block text-sm font-semibold text-gray-700 uppercase tracking-wider;
+    }
+    .editTitle{
+        @apply bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent;
+    }
+    .editBtnDiv{
+        @apply mx-auto w-full max-w-4xl bg-white rounded-2xl shadow-xl p-10;
+    }
+    .editHeader{
+        @apply text-3xl font-bold text-gray-900;
+    }
+    .editFormBorder{
+        @apply border-b border-gray-200 pb-6;
+    }
+    .editIcon{
+        @apply text-blue-500 ml-3;
+    }
+    .desc{
+        @apply mt-2 text-sm text-gray-500;
+    }
+    .gridForm{
+        @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+    }
+    .formAction{
+        @apply flex justify-end space-x-4 border-t border-gray-100 pt-8;
+    }
+    .cancel{
+        @apply px-8 py-3 rounded-lg border border-gray-200 text-gray-600 hover:bg-gray-50 
+        hover:text-gray-800 transition-colors duration-200 font-medium cursor-pointer
+        hover:border-gray-300;
+    }
+    .submit{
+        @apply px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 
+        hover:to-indigo-700 text-white rounded-lg transform hover:scale-[1.02] 
+        transition-all duration-200 font-semibold shadow-md cursor-pointer flex items-center;
+    }
+    .infoView{
+        @apply mx-auto w-full max-w-5xl bg-white rounded-2xl shadow-2xl p-12 relative 
+        transform transition-shadow duration-300;
+    }
+    .name{
+        @apply bg-gradient-to-r from-blue-800 to-gray-900 bg-clip-text text-transparent;
+    }
+    .nameH1{
+        @apply text-5xl font-bold text-gray-900 mb-4;
+    }
+    .flex{
+        @apply flex flex-wrap justify-center gap-6 text-gray-600 mb-6;
+    }
+    .flexA{
+        @apply flex items-center hover:text-blue-600 transition-colors duration-200 font-medium;
+    }
+    .flexDiv{
+        @apply flex items-center text-gray-600 font-medium;
+    }
+    .websiteLink{
+        @apply inline-flex items-center text-blue-600 hover:text-blue-800 
+        transition-colors duration-200 text-lg font-medium;
+    }
+    .linkIcon{
+        @apply border-b border-dotted border-blue-300 hover:border-blue-600;
+    }
 }
-*/
 
 
 

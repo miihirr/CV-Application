@@ -31,7 +31,7 @@ const PersonalInfo = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 p-8 w-screen font-roboto">
+    <div className="form1 font-roboto">
       {formVisible ? (
         <EditForm
           formData={formData}
@@ -55,7 +55,7 @@ const FormInput = ({ label, name, value, type = "text", onChange }) => {
 
   return (
     <div className="space-y-3">
-      <label className="block text-sm font-semibold text-gray-700 uppercase tracking-wider">
+      <label className="label">
         {label}
       </label>
       <input
@@ -64,28 +64,26 @@ const FormInput = ({ label, name, value, type = "text", onChange }) => {
         placeholder={`Enter your ${formattedLabel}`}
         value={value}
         onChange={onChange}
-        className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-300 
-          focus:ring-2 focus:ring-blue-100 transition-all duration-200 outline-none
-          placeholder-gray-400 text-gray-700 hover:border-gray-300"
+        className="input"
       />
     </div>
   );
 };
 
 const EditForm = ({ formData, onSubmit, onChange, onCancel }) => (
-  <div className="mx-auto w-full max-w-4xl bg-white rounded-2xl shadow-xl p-10">
+  <div className="editBtnDiv">
     <form onSubmit={onSubmit} className="space-y-8">
-      <div className="border-b border-gray-200 pb-6">
-        <h2 className="text-3xl font-playfair font-bold text-gray-900">
-          <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+      <div className="editFormBorder">
+        <h2 className="editHeader font-playfair">
+          <span className="editTitle">
             Edit Personal Information
           </span>
-          <span className="text-blue-500 ml-3">✎</span>
+          <span className="editIcon">✎</span>
         </h2>
-        <p className="mt-2 text-sm text-gray-500">Update your professional details</p>
+        <p className="desc">Update your professional details</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="gridForm">
         {Object.entries(formData).map(([fieldName, value]) => (
           <FormInput
             key={fieldName}
@@ -105,21 +103,17 @@ const EditForm = ({ formData, onSubmit, onChange, onCancel }) => (
 
 
 const FormActions = ({ onCancel }) => (
-  <div className="flex justify-end space-x-4 border-t border-gray-100 pt-8">
+  <div className="formAction">
     <button
       type="button"
       onClick={onCancel}
-      className="px-8 py-3 rounded-lg border border-gray-200 text-gray-600 hover:bg-gray-50 
-        hover:text-gray-800 transition-colors duration-200 font-medium cursor-pointer
-        hover:border-gray-300"
+      className="cancel"
     >
       Cancel
     </button>
     <button
       type="submit"
-      className="px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 
-        hover:to-indigo-700 text-white rounded-lg transform hover:scale-[1.02] 
-        transition-all duration-200 font-semibold shadow-md cursor-pointer flex items-center"
+      className="submit"
     >
       <svg
         className="w-5 h-5 mr-2"
@@ -141,14 +135,13 @@ const FormActions = ({ onCancel }) => (
 
 const PersonalInfoView = ({ data, onEdit }) => (
   <div
-    className="mx-auto w-full max-w-5xl bg-white rounded-2xl shadow-2xl p-12 relative 
-    transform hover:shadow-3xl transition-shadow duration-300"
+    className="infoView hover:shadow-3xl"
   >
     <EditButton onClick={onEdit} />
 
     <div className="text-center space-y-6">
-      <h1 className="text-5xl font-playfair font-bold text-gray-900 mb-4">
-        <span className="bg-gradient-to-r from-blue-800 to-gray-900 bg-clip-text text-transparent">
+      <h1 className="nameH1 font-playfair">
+        <span className="name">
           {data.name}
         </span>
       </h1>
@@ -161,7 +154,7 @@ const PersonalInfoView = ({ data, onEdit }) => (
 );
 
 const ContactInfo = ({ data }) => (
-  <div className="flex flex-wrap justify-center gap-6 text-gray-600 mb-6">
+  <div className="flex">
     <ContactItem
       icon="email"
       content={data.email}
@@ -183,12 +176,12 @@ const ContactItem = ({ icon, content, href }) => {
     href ? (
       <a
         href={href}
-        className="flex items-center hover:text-blue-600 transition-colors duration-200 group font-medium"
+        className="flexA group"
       >
         {children}
       </a>
     ) : (
-      <div className="flex items-center text-gray-600 font-medium">
+      <div className="flexDiv">
         {children}
       </div>
     );
@@ -206,11 +199,10 @@ const WebsiteLink = ({ link }) => (
     href={link}
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-flex items-center text-blue-600 hover:text-blue-800 
-      transition-colors duration-200 text-lg font-medium group"
+    className="websiteLink group"
   >
     <LinkIcon />
-    <span className="border-b border-dotted border-blue-300 hover:border-blue-600">
+    <span className="linkIcon">
       {link.replace(/^https?:\/\//, "")}
     </span>
   </a>
@@ -218,3 +210,5 @@ const WebsiteLink = ({ link }) => (
 
 
 export default PersonalInfo;
+
+
