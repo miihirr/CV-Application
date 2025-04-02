@@ -1,3 +1,4 @@
+import React from "react";
 const EditButton = ({ onClick }) => (
   <button
     onClick={onClick}

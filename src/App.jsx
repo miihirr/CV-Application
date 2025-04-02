@@ -1,5 +1,5 @@
 import React from 'react';
-import PersonalInfo from './personalInfo';  
+import PersonalInfo from './PersonalInfo';  
 
 const App = () => {
   return (
