@@ -1,10 +1,10 @@
 import React from "react";
-import EditButton from "./EditBtn";
+import EditButton from "./editBtn";
 import ContactInfo from "./ContactInfo";
 import WebsiteLink from "./WebsiteLink";
 const PersonalInfoView = ({ data, onEdit }) => (
     <div
-      className="infoView hover:shadow-3xl"
+      className="infoView hover:shadow-3xl mt-20"
     >
       <EditButton onClick={onEdit} />
   
@@ -22,3 +22,4 @@ const PersonalInfoView = ({ data, onEdit }) => (
     </div>
   );
 export default PersonalInfoView;
+

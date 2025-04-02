@@ -1,10 +1,11 @@
 import React from 'react';
 import PersonalInfo from './PersonalInfo';  
-
+import Education from './education';
 const App = () => {
   return (
-    <div>
+    <div className='mainBox'>
       <PersonalInfo /> 
+      <Education />
     </div>
   );
 };

@@ -2,7 +2,7 @@
 
 @layer components{
     .form1{
-        @apply min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 p-8 w-screen;
+        @apply w-screen;
     }
     .input{
         @apply w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-blue-300 
@@ -16,7 +16,7 @@
         @apply bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent;
     }
     .editBtnDiv{
-        @apply mx-auto w-full max-w-4xl bg-white rounded-2xl shadow-xl p-10;
+        @apply mx-auto w-full max-w-4xl bg-white rounded-2xl shadow-xl p-10 m-10;
     }
     .editHeader{
         @apply text-3xl font-bold text-gray-900;
@@ -47,8 +47,8 @@
         transition-all duration-200 font-semibold shadow-md cursor-pointer flex items-center;
     }
     .infoView{
-        @apply mx-auto w-full max-w-5xl bg-white rounded-2xl shadow-2xl p-12 relative 
-        transform transition-shadow duration-300;
+        @apply mx-auto w-full max-w-5xl bg-white relative 
+        transform transition-shadow duration-300 hover:shadow-xl transition-shadow duration-300;
     }
     .name{
         @apply bg-gradient-to-r from-blue-800 to-gray-900 bg-clip-text text-transparent;
@@ -72,6 +72,7 @@
     .linkIcon{
         @apply border-b border-dotted border-blue-300 hover:border-blue-600;
     }
+
 }
 
 

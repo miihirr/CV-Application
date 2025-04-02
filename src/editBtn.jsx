@@ -2,7 +2,7 @@ import React from "react";
 const EditButton = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute top-8 right-8 p-3 bg-white hover:bg-blue-50 rounded-full 
+    className="absolute top-1 right-5 p-3 bg-white hover:bg-blue-50 rounded-full 
       shadow-md hover:shadow-lg transition-all duration-200 text-blue-600 hover:text-blue-800
       cursor-pointer"
     aria-label="Edit information"

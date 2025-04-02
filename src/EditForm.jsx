@@ -6,10 +6,9 @@ const EditForm = ({ formData, onSubmit, onChange, onCancel }) => (
     <form onSubmit={onSubmit} className="space-y-8">
       <div className="editFormBorder">
         <h2 className="editHeader font-playfair">
-          <span className="editTitle">Edit Personal Information</span>
+          <span className="editTitle">Edit Information</span>
           <span className="editIcon">✎</span>
         </h2>
-        <p className="desc">Update your professional details</p>
       </div>
 
       <div className="gridForm">
@@ -30,3 +29,5 @@ const EditForm = ({ formData, onSubmit, onChange, onCancel }) => (
   </div>
 );
 export default EditForm;
+
+
