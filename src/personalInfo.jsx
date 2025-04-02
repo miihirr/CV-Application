@@ -6,11 +6,11 @@ import LinkIcon from "./icons/linkIcon.jsx";
 import PhoneIcon from "./icons/phoneIcon.jsx";
 
 const INITIAL_STATE = {
-  name: "JOHN DOE",
-  email: "johndoe@example.com",
+  name: "Mihir Patel",
+  email: "mihirpatel@example.com",
   phoneNo: "+1 (234) 567-890",
-  address: "123 Main St, New York, NY",
-  link: "https://www.johndoe.com",
+  address: "123 Main St, Ontario",
+  link: "https://www.linkedin.com/in/mihirpatelyorku/",
 };
 
 // Main Component
