@@ -1,7 +1,7 @@
 import React from 'react';
 import PersonalInfo from './PersonalInfo';  
 import Education from './Education';
-import Skills from './skills';
+import Skills from './Skills';
 import Work from './Work';
 const App = () => {
   return (
