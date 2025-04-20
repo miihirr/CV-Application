@@ -1,5 +1,5 @@
 import React from "react";
-import EditButton from "./editBtn";
+import EditButton from "./EditBtn";
 import ContactInfo from "./ContactInfo";
 import WebsiteLink from "./WebsiteLink";
 const PersonalInfoView = ({ data, onEdit }) => (
