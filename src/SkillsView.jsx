@@ -1,5 +1,5 @@
 import React from "react";
-import EditButton from "./editBtn";
+import EditButton from "./EditBtn";
 
 const SkillsView = ({ data, onEdit }) => {
   return (
