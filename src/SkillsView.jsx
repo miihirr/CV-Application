@@ -10,10 +10,14 @@ const SkillsView = ({ data, onEdit }) => {
       </div>
 
       <div className="space-y-2">
-      <h3 className="mt-4 text-gray-700 text-sm leading-relaxed">{data.skills || "add skills here"}</h3>
+        <div className="mt-4 text-gray-700 text-sm leading-relaxed">
+          <ul>
+            {data.skills.map((skill, index) => (
+              <li key={index}>{skill}</li>
+            ))}
+          </ul>
+        </div>
       </div>
-
-    
     </div>
   );
 };

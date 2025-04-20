@@ -3,14 +3,7 @@ import { useState } from "react";
 import SkillsView from "./SkillsView";
 import EditForm from "./EditForm";
 const initial = {
-  skills: `Languages: Python, JavaScript, HTML/CSS, Java, C, bash & shell scripting, SQL, React
-• Developer Tools: Visual Studio, Eclipse, PyCharm, IntelliJ, Jupyter Notebook
-• Microsoft Tools: Word, Excel, PowerPoint
-• Package Manager: npm, Yarn
-• Module Bundler: Webpack
-• Platforms: Linux/Unix, Windows, macOS
-• Version Control: Git/GitHub
-• Soft Skills: Adaptable, Detail oriented, Communication, Teamwork, Strong work ethics`,
+  skills: [`Languages: Python, JavaScript, HTML/CSS, Java, C, bash & shell scripting, SQL, React`, `Developer Tools: Visual Studio, Eclipse, PyCharm, IntelliJ, Jupyter Notebook`,` Microsoft Tools: Word, Excel, PowerPoint`,`Package Manager: npm, Yarn`,`Module Bundler: Webpack`,`Platforms: Linux/Unix, Windows, macOS`,`Version Control: Git/GitHub`,`Soft Skills: Adaptable, Detail oriented, Communication, Teamwork, Strong work ethics`]
 };
 
 const Skills = () => {
